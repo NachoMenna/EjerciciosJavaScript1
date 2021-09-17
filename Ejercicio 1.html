@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Ejercicio N° 1</h1>
+    <script>
+        var distancia;
+
+        distancia = prompt('ingrese la distancia que quiere recorrer, en metros', '')
+
+        if (distancia <= 1000) {
+            document.write('El medio de transporte apropiado para su recorrido es a pié.');
+        }
+        else {
+            if (distancia >= 1000 && distancia < 10000)
+                document.write('El medio de transporte apropiado para su recorrido es en bicicleta.')
+            if (distancia >= 10000 && distancia < 30000)
+                document.write('El medio de transporte apropiado para su recorrido es en colectivo.')
+            if (distancia >= 30000 && distancia < 100000)
+                document.write('El medio de transporte apropiado para su recorrido es en auto.')
+            if (distancia >= 100000)
+                document.write('El medio de transporte apropiado para su recorrido es en avión.')
+        }
+
+    </script>
+</body>
+
+</html>
